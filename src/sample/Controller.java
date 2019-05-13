@@ -9,7 +9,6 @@ import java.awt.Toolkit;
 import java.awt.image.BufferedImage;
 import javax.imageio.ImageIO;
 import java.io.File;
-import java.util.Properties;
 
 public class Controller {
 
@@ -18,7 +17,7 @@ public class Controller {
         String desktopPath = System.getProperty("user.home")+"\\Desktop\\";
         captureScreen(desktopPath+System.currentTimeMillis()+".jpg");
     }
-    
+
     public void captureScreen(String fileName) throws Exception {
         Dimension screenSize = Toolkit.getDefaultToolkit().getScreenSize();
         Rectangle screenRectangle = new Rectangle(screenSize);
